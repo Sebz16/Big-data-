@@ -8,6 +8,7 @@
 - Se ha aplicado una correcion de formato a la columna de `Vram` del conjunto de datos.
 - Se ha aplicado una correcion de formato a la columna de `Memory Clock` del conjunto de datos.
 - Se ha aplicado una correcion de formato a la columna de `EAN` del conjunto de datos.
+- Se ha aplicado una correcion de formato a la columna de `TDP` del conjunto de datos.
 ## Justificación
 - La decisión de eliminar la columna de `Product Page` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
 -  La decisión de eliminar la columna de `UPC` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
@@ -28,3 +29,4 @@
 - La correcion de formato de la columna `Vram`.Se aplico la formula `VALOR(SUSTITUIR(O2:O1418,"MHz",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
 - La correcion de formato de la columna `Memory Clock`.Se aplico la formula `VALOR(SUSTITUIR(P2:P1418,"MHz",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
 - La correcion de formato de la columna `EAN`.Se aplico un formato de celda de cientifico a numero.
+- La correcion de formato de la columna `TDP`.Se aplico la formula `VALOR(SUSTITUIR(Q2:Q1418,"W",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
