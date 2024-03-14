@@ -3,7 +3,11 @@
 ## Listado de cambios 
 - Se ha eliminado la columna de `Product Page` del conjunto de datos.
 - Se ha eliminado la columna de `UPC` del conjunto de datos .
-
+- Se ha aplicado una correcion de formato a la columna de `Length` del conjunto de datos.
+- Se ha aplicado una correcion de formato a la columna de `Boost Clock` del conjunto de datos.
+- Se ha aplicado una correcion de formato a la columna de `Vram` del conjunto de datos.
+- Se ha aplicado una correcion de formato a la columna de `Memory Clock` del conjunto de datos.
+- Se ha aplicado una correcion de formato a la columna de `EAN` del conjunto de datos.
 ## Justificación
 - La decisión de eliminar la columna de `Product Page` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
 -  La decisión de eliminar la columna de `UPC` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
