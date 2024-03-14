@@ -12,10 +12,12 @@
 ## Justificación
 - La decisión de eliminar la columna de `Product Page` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
 -  La decisión de eliminar la columna de `UPC` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
--  La columna `Length` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes, informacion incompleta.
--  La columna `Boost Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `Length` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `Boost Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes, informacion incompleta.
+-  
 -  La columna `Vram` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
--  La columna `Memory Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `Memory Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes,informacion incompleta.
+- - Para la informacion incompleta se opto por utilizar la mediana, para rellenar los datos faltantes debido a la cantidad de datos atipicos que llega al umbral de 10.04%.
 -  La columna `EAN` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
 ## Impacto del Cambio
 - La eliminación de la columna de `Product Page` afectará al análisis de datos que dependía de esta información para identificar los sitios donde se vende el producto. Es importante tener en cuenta que esta acción puede resultar en una pérdida de información sobre los puntos de venta del producto.
@@ -26,8 +28,9 @@
 - La eliminación de la columna de `UPC`.Se llevó a cabo en la hoja de calculo de excel.
 - La correcion de formato de la columna `Length`.Se aplico la formula `VALOR(SUSTITUIR(F2:F1418,"mm",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
 - La correcion de formato de la columna `Boost Clock`.Se aplico la formula `VALOR(SUSTITUIR(N2:N1418,"MHz",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
-- - Para la informacion faltante se opto por utilizar la mediana para rellenar los datos faltantes por la cantidad de datos atipicos. Se aplico la siguiente formula `MEDIANA(N2:N1418)`.
+- - La insercion de la mediana en la columna de los datos faltantes. Se aplico la siguiente formula `MEDIANA(N2:N1418)`, insertando los datos en las filas con la informacion incompleta.
 - La correcion de formato de la columna `Vram`.Se aplico la formula `VALOR(SUSTITUIR(O2:O1418,"MHz",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
 - La correcion de formato de la columna `Memory Clock`.Se aplico la formula `VALOR(SUSTITUIR(P2:P1418,"MHz",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
+- - La insercion de la mediana en la columna de los datos faltantes. Se aplico la siguiente formula `MEDIANA(P2:P1418)`, insertando los datos en las filas con la informacion incompleta.
 - La correcion de formato de la columna `EAN`.Se aplico un formato de celda de cientifico a numero.
 - La correcion de formato de la columna `TDP`.Se aplico la formula `VALOR(SUSTITUIR(Q2:Q1418,"W",""))` para dejar unicamente los valores numericos en una nueva columna, para reemplazar los datos de la antigua columna con la nueva.
