@@ -11,7 +11,11 @@
 ## Justificación
 - La decisión de eliminar la columna de `Product Page` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
 -  La decisión de eliminar la columna de `UPC` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
-
+-  La columna `Length` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `Boost Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `Vram` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `Memory Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
+-  La columna `EAN` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
 ## Impacto del Cambio
 - La eliminación de la columna de `Product Page` afectará al análisis de datos que dependía de esta información para identificar los sitios donde se vende el producto. Es importante tener en cuenta que esta acción puede resultar en una pérdida de información sobre los puntos de venta del producto.
 - La eliminación de la columna de `UPC` afectará al análisis de datos que dependía de esta información para identificar código de barras. Es importante tener en cuenta que esta acción puede resultar en una pérdida de información para el seguimiento de productos en tiendas.
