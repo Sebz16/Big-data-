@@ -5,8 +5,10 @@
 - Se ha eliminado la columna de `UPC` del conjunto de datos .
 - Se ha aplicado una correcion de formato a la columna de `Length` del conjunto de datos.
 - Se ha aplicado una correcion de formato a la columna de `Boost Clock` del conjunto de datos.
+- - Insercion de mediana en las filas con informacion incompleta
 - Se ha aplicado una correcion de formato a la columna de `Vram` del conjunto de datos.
 - Se ha aplicado una correcion de formato a la columna de `Memory Clock` del conjunto de datos.
+- - Insercion de mediana en las filas con informacion incompleta
 - Se ha aplicado una correcion de formato a la columna de `EAN` del conjunto de datos.
 - Se ha aplicado una correcion de formato a la columna de `TDP` del conjunto de datos.
 ## Justificación
@@ -14,7 +16,6 @@
 -  La decisión de eliminar la columna de `UPC` se basa en la falta de disponibilidad de datos en esta columna y en la baja relevancia de la información para los objetivos de análisis establecidos. La mayoría de los registros contenían valores nulos, lo que indica una falta significativa de información útil.
 -  La columna `Length` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
 -  La columna `Boost Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes, informacion incompleta.
--  
 -  La columna `Vram` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes.
 -  La columna `Memory Clock` presentaba problemas de formato que afectaban la consistencia y la interpretación de los datos. Estos problemas incluían formatos inconsistentes,informacion incompleta.
 - - Para la informacion incompleta se opto por utilizar la mediana, para rellenar los datos faltantes debido a la cantidad de datos atipicos que llega al umbral de 10.04%.
