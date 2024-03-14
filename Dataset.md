@@ -19,7 +19,8 @@
 ## Impacto del Cambio
 - La eliminación de la columna de `Product Page` afectará al análisis de datos que dependía de esta información para identificar los sitios donde se vende el producto. Es importante tener en cuenta que esta acción puede resultar en una pérdida de información sobre los puntos de venta del producto.
 - La eliminación de la columna de `UPC` afectará al análisis de datos que dependía de esta información para identificar código de barras. Es importante tener en cuenta que esta acción puede resultar en una pérdida de información para el seguimiento de productos en tiendas.
+-La corrección de formato en las columnas `Length`,`Boost Clock`,`Vram`,`Memory Clock`,`EAN` mejoró la calidad y la coherencia de los datos, lo que facilita su interpretación y análisis. Esto asegura que los resultados obtenidos a partir de estos datos sean más confiables y precisos.
 
-## Proceso de Eliminación
+## Procedimiento llevado a cabo
 - La eliminación de la columna de `Product Page` se llevó a cabo utilizando la hoja de calculo de excel. Para eliminar la columna del conjunto de datos original.
 - La eliminación de la columna de `UPC` se llevó a cabo utilizando la hoja de calculo de excel. Para eliminar la columna del conjunto de datos original.
